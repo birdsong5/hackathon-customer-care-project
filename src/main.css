@@ -1,0 +1,234 @@
+:root {
+  --orangeColor: #c2c0f7;
+  --purpleColor: #1a0554;
+  --redColor: #fe7066;
+  --borderRadius: 10px;
+  --border: 0.5px solid lightgrey;
+}
+
+.dashboard {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 6fr 3fr;
+  grid-template-areas: "n m p";
+}
+
+.main-section {
+  margin: 20px 0;
+  padding: 20px 100px;
+  grid-area: m;
+}
+
+.customer {
+  background-color: var(--purpleColor);
+  border-radius: var(--borderRadius);
+  color: white;
+  padding: 20px;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.subTitle {
+  font-weight: 400;
+  font-size: 22px;
+  color: #d2dbeb;
+}
+
+.largeTitle {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.middle-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.group-info {
+  box-shadow: 4px 6px 20px lightgray;
+  border-radius: var(--borderRadius);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+}
+.group-homework {
+  background-color: var(--orangeColor);
+  padding: 20px;
+  border-radius: var(--borderRadius);
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+}
+
+.group-homework p,
+.group-homework span {
+  color: black;
+}
+
+.group-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flagProgress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 60px;
+}
+
+.flagProgress img {
+  padding: 7px;
+  box-shadow: 4px 6px 20px lightgray;
+  border-radius: 12px;
+}
+
+.summary-button {
+  background-color: var(--purpleColor);
+  color: white;
+  padding: 15px;
+  border-radius: var(--borderRadius);
+  border: 2px solid var(--purpleColor);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.summary-button:hover {
+  background-color: #4a6fae;
+  border: 2px solid #4a6fae;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.loader {
+  margin: 40px 0;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+/* PROFILE SECTION */
+
+.agent-section {
+  background-color: #f9fafb;
+  padding: 30px 100px;
+  grid-area: p;
+  display: grid;
+  grid-template-rows: 30% 15% 55%;
+}
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture img {
+  width: 110px;
+  border-radius: 50%;
+}
+
+.feedback-section {
+  border: var(--border);
+  border-radius: var(--borderRadius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.feedback-button {
+  background-color: var(--purpleColor);
+  color: white;
+  padding: 15px;
+  border-radius: var(--borderRadius);
+  border: 2px solid var(--purpleColor);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.feedback-button:hover {
+  background-color: #4a6fae;
+  border: 2px solid #4a6fae;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.progress-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.progressBox {
+  height: 100px;
+  width: 100%;
+  border: var(--border);
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.supervisor {
+  color: red;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.supervisor-button {
+  background-color: var(--purpleColor);
+  color: white;
+  padding: 15px;
+  border-radius: var(--borderRadius);
+  border: 2px solid var(--purpleColor);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.feedback-button:hover {
+  background-color: #4a6fae;
+  border: 2px solid #4a6fae;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.progressBox i {
+  color: white;
+  padding: 16px 16px;
+  border-radius: var(--borderRadius);
+}
+
+.grammar-profile-section i {
+  background-color: var(--purpleColor);
+}
+.dictionary-profile-section i {
+  background-color: var(--orangeColor);
+}
+.reading-profile-section i {
+  background-color: var(--redColor);
+}
