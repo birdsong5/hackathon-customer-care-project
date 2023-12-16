@@ -1,42 +1,56 @@
 import "./main.css";
 
-const Agent = () => {
+import { useState, useEffect } from "react";
+
+const Agent = ({ data }) => {
+  const [verified, setVerified] = useState(false);
+
+  useEffect(() => {
+    setVerified(data?.verified);
+  }, [data?.verified]);
+
   return (
     <div className="agent-section">
-      <div class="picture">
+      <div className="picture">
         <img src="images/profile-img.png" alt="Agent" />
-        <p class="largeTitle">Inna Troian</p>
-        <p class="subTitle">Customer care agent</p>
+        <p className="largeTitle">Inna Troian</p>
+        <p className="subTitle">Customer care agent</p>
       </div>
 
-      <div class="feedback-section">
-        <p class="title">
+      <div className="feedback-section">
+        <p className="title">
           Feedback on the call <br />
-          <span class="subTitle">To help you improve</span>
+          <span className="subTitle">To help you improve</span>
         </p>
-        <button className="feedback-button">Generate feedback</button>
+        <p>{data?.feedback}</p>
       </div>
 
-      <div class="progress-profile">
-        <p class="largeTitle">Information for supervisor</p>
-        <div class="progressBox grammar-profile-section">
-          <p class="title">
+      <div className="progress-profile">
+        <p className="largeTitle">Information for supervisor</p>
+        <div className="progressBox grammar-profile-section">
+          <p className="title">
             Quality <br />
-            <span class="subTitle">5 out of 5 </span>
+            <span className="subTitle">5 out of 5 </span>
           </p>
-          <i class="fa-solid fa-pencil"></i>
-          <i class="fa-solid fa-pencil"></i>
-          <i class="fa-solid fa-pencil"></i>
-          <i class="fa-solid fa-pencil"></i>
-          <i class="fa-solid fa-pencil"></i>
+          <i className="fa-solid fa-pencil"></i>
+          <i className="fa-solid fa-pencil"></i>
+          <i className="fa-solid fa-pencil"></i>
+          <i className="fa-solid fa-pencil"></i>
+          <i className="fa-solid fa-pencil"></i>
         </div>
-        <div class="progressBox dictionary-profile-section">
-          <p class="title">Customer was verified</p>
-          <i class="fa-solid fa-spell-check"></i>
+        <div className="progressBox dictionary-profile-section">
+          <p className="title">Customer was verified</p>
+          {verified ? (
+            // If true
+            <i className="fa-solid fa-spell-check green">✓</i>
+          ) : (
+            // If false
+            <i className="fa-solid fa-spell-check red">X</i>
+          )}
         </div>
-        <div class="progressBox reading-profile-section">
-          <p class="supervisor">For Supervisor</p>
-          <button class="supervisor-button">Evaluate this call</button>
+        <div className="progressBox reading-profile-section">
+          <p className="supervisor">For Supervisor</p>
+          <button className="supervisor-button">Evaluate this call</button>
         </div>
       </div>
     </div>

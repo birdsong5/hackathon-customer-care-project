@@ -1,34 +1,34 @@
 import Summary from "./Summary";
 import "./main.css";
 
-const Main = () => {
+const Main = ({ data }) => {
   return (
     <div className="main-section">
       <h1>Welcome, Inna</h1>
-      <div class="customer">
+      <div className="customer">
         <p>
-          <span class="subTitle"> CALL IN PROGRESS </span>
+          <span className="subTitle"> CALL IN PROGRESS </span>
         </p>
-        <div class="customer-info">
-          <p class="largeTitle">Mr. Charles de Gaulle</p>
+        <div className="customer-info">
+          <p className="largeTitle">Mr. Charles de Gaulle</p>
         </div>
-        <p class="subTitle">Platinum customer</p>
+        <p className="subTitle">Platinum customer</p>
       </div>
 
-      <Summary />
+      <Summary summary={data?.summary} />
 
-      <div class="middle-section">
-        <div class="group-info">
-          <div class="group-header">
-            <p class="title">Generate emails</p>
+      <div className="middle-section">
+        <div className="group-info">
+          <div className="group-header">
+            <p className="title">Generate emails</p>
           </div>
-          <button class="group-homework">
-            <p class="title">
+          <button className="group-homework">
+            <p className="title">
               Follow up email <br />
-              <span class="subTitle">// just a text //</span>
+              <span className="subTitle">// just a text //</span>
             </p>
           </button>
-          <div class="group-footer"></div>
+          <div className="group-footer"></div>
         </div>
       </div>
     </div>
