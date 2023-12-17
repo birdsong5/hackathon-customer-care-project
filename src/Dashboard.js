@@ -14,7 +14,7 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/birdsong5/hackathon-customer-care-project/main/my-react-app/output.json"
+          "https://raw.githubusercontent.com/birdsong5/hackathon-customer-care-project/main/output.json"
         );
 
         if (response.ok) {

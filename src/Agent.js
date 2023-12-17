@@ -12,17 +12,16 @@ const Agent = ({ data }) => {
   return (
     <div className="agent-section">
       <div className="picture">
-        <img src="images/profile-img.png" alt="Agent" />
-        <p className="largeTitle">Inna Troian</p>
-        <p className="subTitle">Customer care agent</p>
+        <img src="images/calliope.jpg" alt="Agent" />
+        <div className="largeTitle">Tereza</div>
+        <div className="summary-title">CUSTOMER CARE AGENT</div>
       </div>
 
       <div className="feedback-section">
-        <p className="title">
-          Feedback on the call <br />
-          <span className="subTitle">To help you improve</span>
+        <p className="summary-title">
+          CALL FEEDBACK <br />
         </p>
-        <p>{data?.feedback}</p>
+        <div className="feedback-text">{data?.feedback}</div>
       </div>
 
       <div className="progress-profile">

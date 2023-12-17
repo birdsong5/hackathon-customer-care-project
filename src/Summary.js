@@ -7,13 +7,9 @@ const Summary = ({ summary }) => {
   }
 
   return (
-    <div className="summary-section">
-      <div className="flagProgress">
-        <p className="largeTitle">Here is the summary of the call</p>
-      </div>
-      <div className="summary-output">
-        <p>{summary}</p>
-      </div>
+    <div className="summary-output">
+      <p className="summary-title">SUMMARY OF THE CALL</p>
+      <div className="summary-text">{summary}</div>
     </div>
   );
 };
