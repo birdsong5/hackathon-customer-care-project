@@ -41,7 +41,7 @@
 }
 
 .picture-customer img {
-  width: 110px;
+  width: 150px;
   border-radius: 50%;
   margin: 0 25px 0 0;
 }
@@ -148,16 +148,20 @@
   cursor: pointer;
 }
 
+.email-bold {
+  font-weight: 700;
+}
+
 /* PROFILE SECTION */
 
 .agent-section {
   background-color: #f9fafb;
   padding: 10px 50px;
   grid-area: p;
-  display: grid;
 }
 
 .picture {
+  margin: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;

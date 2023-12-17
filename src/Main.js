@@ -15,7 +15,7 @@ const Main = ({ data }) => {
         </p>
         <div className="customer-info">
           <div className="picture-customer">
-            <img src="images/profile-img.png" alt="Agent" />
+            <img src="images/cedric.jpg" alt="Agent" />
             <p className="largeTitle">Mr. {data?.customer_name}</p>
           </div>
         </div>
