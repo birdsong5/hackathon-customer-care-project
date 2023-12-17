@@ -1,11 +1,13 @@
 {
-  "event": "Workshop",
-  "color": "N/A",
-  "size": "N/A",
-  "special": "N/A",
-  "necessities": "No",
-  "summary": "Customer's luggage is lost, causing inconvenience for attending a workshop.",
-  "feedback": "The call centre agent was empathetic and provided useful information.",
-  "quality": "good",
-  "verified": "Yes"
+    "customer_name": "Cedric Malu",
+    "email": "cedric@startupyard.com",
+    "event": "event in Prague",
+    "color": "blue",
+    "size": "Unknown",
+    "special": "Adidas sports bag",
+    "necessities": "Yes",
+    "summary": "Cedric Malu called about his lost luggage after arriving in Prague for an event. He requested compensation for his lost items.",
+    "feedback": "The agent appropriately asked for necessary details about the customer and his lost luggage. However, the agent could show more empathy by acknowledging the customer's frustration.",
+    "quality": "good",
+    "verified": "Yes"
 }
