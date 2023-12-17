@@ -14,7 +14,7 @@ const Agent = ({ data }) => {
       <div className="picture">
         <img src="images/calliope.jpg" alt="Agent" />
         <div className="largeTitle">Tereza</div>
-        <div className="summary-title">CUSTOMER CARE AGENT</div>
+        <div className="agent-title">CUSTOMER CARE AGENT</div>
       </div>
 
       <div className="feedback-section">

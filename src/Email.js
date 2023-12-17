@@ -3,7 +3,7 @@ import "./main.css";
 const Email = () => {
   return (
     <div className="summary-output">
-      <p className="summary-title">GENERATED EMAILS</p>
+      <p className="summary-title">GENERATED EMAIL</p>
       <div className="summary-text">
         <p>
           Dear <span className="email-bold">Cedric Malu</span>,{" "}

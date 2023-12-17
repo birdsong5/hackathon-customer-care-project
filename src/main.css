@@ -160,6 +160,12 @@
   grid-area: p;
 }
 
+.agent-title {
+  font-size: 18px;
+  color: #858992;
+  font-weight: 600;
+}
+
 .picture {
   margin: 40px;
   display: flex;
