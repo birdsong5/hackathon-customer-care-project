@@ -10,7 +10,7 @@
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 6fr 3fr;
+  grid-template-columns: 0.5fr 6.5fr 3fr;
   grid-template-areas: "n m p";
 }
 
@@ -70,41 +70,6 @@
   margin-top: 35px;
 }
 
-.group-info {
-  box-shadow: 4px 6px 20px lightgray;
-  border-radius: var(--borderRadius);
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 300px;
-}
-
-.group-header {
-  display: flex;
-  justify-content: space-between;
-}
-.group-homework {
-  background-color: var(--orangeColor);
-  padding: 20px;
-  border-radius: var(--borderRadius);
-  border: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 120px;
-}
-
-.group-homework p,
-.group-homework span {
-  color: black;
-}
-
-.group-footer {
-  display: flex;
-  justify-content: space-between;
-}
-
 .flagProgress {
   display: flex;
   flex-direction: column;
@@ -160,6 +125,17 @@
   padding: 20px;
 }
 
+.details-text {
+  background-color: #eae5f6;
+  padding: 10px;
+}
+
+.details-text-data {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .loader {
   margin: 40px 0;
   font-size: 35px;
@@ -170,14 +146,12 @@
 
 .agent-section {
   background-color: #f9fafb;
-  padding: 10px 60px;
+  padding: 10px 50px;
   grid-area: p;
   display: grid;
-  grid-template-rows: 30% 15% 55%;
 }
 
 .picture {
-  margin-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,7 +170,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
+  padding: 0 10px;
+  height: 250px;
 }
 
 .feedback-subTitle {
@@ -211,10 +186,10 @@
 .progress-profile {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .progressBox {
+  margin-bottom: 15px;
   height: 100px;
   width: 100%;
   border: var(--border);
@@ -257,8 +232,8 @@
   background-color: var(--purpleColor);
 }
 .dictionary-profile-section i {
-  background-color: var(--orangeColor);
+  background-color: green;
 }
 .reading-profile-section i {
-  background-color: var(--redColor);
+  background-color: green;
 }

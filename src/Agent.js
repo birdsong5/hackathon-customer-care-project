@@ -18,24 +18,17 @@ const Agent = ({ data }) => {
       </div>
 
       <div className="feedback-section">
-        <p className="summary-title">
+        <div className="summary-title">
           CALL FEEDBACK <br />
-        </p>
+        </div>
         <div className="feedback-text">{data?.feedback}</div>
       </div>
 
       <div className="progress-profile">
-        <p className="largeTitle">Information for supervisor</p>
+        <p className="summary-title">INFORMATION FOR SUPERVISOR</p>
         <div className="progressBox grammar-profile-section">
-          <p className="title">
-            Quality <br />
-            <span className="subTitle">5 out of 5 </span>
-          </p>
-          <i className="fa-solid fa-pencil"></i>
-          <i className="fa-solid fa-pencil"></i>
-          <i className="fa-solid fa-pencil"></i>
-          <i className="fa-solid fa-pencil"></i>
-          <i className="fa-solid fa-pencil"></i>
+          <p className="title">Quality:</p>
+          <div className="largeTitle">{data?.quality}</div>
         </div>
         <div className="progressBox dictionary-profile-section">
           <p className="title">Customer was verified</p>
@@ -46,10 +39,6 @@ const Agent = ({ data }) => {
             // If false
             <i className="fa-solid fa-spell-check red">X</i>
           )}
-        </div>
-        <div className="progressBox reading-profile-section">
-          <p className="supervisor">For Supervisor</p>
-          <button className="supervisor-button">Evaluate this call</button>
         </div>
       </div>
     </div>
